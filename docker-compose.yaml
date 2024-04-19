@@ -1,0 +1,10 @@
+services:
+  warrior:
+    build: .
+    volumes:
+      - ./taskwarrior/tasks:/home/jwholding/.task/
+      - ./taskwarrior/config/taskrc:/home/jwholding/.taskrc
+      - ./timewarrior/config:/home/jwholding/.config/timewarrior
+      - ./timewarrior/database:/home/jwholding/.local/share/timewarrior
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
