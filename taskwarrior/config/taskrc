@@ -1,6 +1,8 @@
 data.location=~/.task
 regex=on
-uda.priority.values=H,M,L,h,m,l,0
+uda.priority.values=U,H,M,L,u,h,m,l,0
+urgency.uda.priority.U.coefficient=7.5
+urgency.uda.priority.u.coefficient=7.5
 urgency.uda.priority.h.coefficient=6.0
 urgency.uda.priority.l.coefficient=1.8
 urgency.uda.priority.m.coefficient=3.9
